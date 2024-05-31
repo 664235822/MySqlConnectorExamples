@@ -3,7 +3,7 @@ MySqlConnectorExamples示例项目
 
 * The MySQL database connection plugin tool has implemented TCP persistent connections, connection pooling, multithreading, asynchronous calls, and multi-statement transaction execution. It supports both Blueprint and C++ invocations, making it more stable and powerful than other MySQL tools available on the market. It is suitable for large-scale online game development.
 
-* When using plug-ins, All dll files under "{Project}\Plugins\MySQLConnectorTools\Source\ThirdParty\MysqlConnectorCpp\lib" need to be copied to "{Project}\Binaries\Win64" Or Unreal Engine won't run. Same thing with the package
+* When using plug-ins, All dll files under "MySqlConnectorExamples\dll\" need to be copied to "{Project}\Binaries\Win64" Or Unreal Engine won't run. Same thing with the package
 
 * If the plug-in encounters any bugs, please raise them in the issues, and we will conduct version iteration as soon as possible
 
