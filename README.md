@@ -13,7 +13,7 @@ MySqlConnectorExamples示例项目
 
 * MySQL数据库连接插件工具实现了TCP持久连接、连接池、多线程、异步调用和多语句事务执行。它同时支持Blueprint和c++调用，这使得它比市场上可用的其他MySQL工具更加稳定和强大。适用于大型网络游戏开发。
 
-* 使用插件时，需要将“{Project}\Plugins\MySQLConnectorTools\Source\ThirdParty\MysqlConnectorCpp\lib”下的所有dll文件拷贝到“{Project}\Binaries\Win64”下，否则虚幻引擎无法运行，打包文件同理
+* 使用插件时，需要将“MySqlConnectorExamples\dll\”下的所有dll文件拷贝到“{Project}\Binaries\Win64”下，否则虚幻引擎无法运行，打包文件同理
 
 * 插件如果遇到任何bug请在issues中提出，我们会第一时间进行版本迭代
 
