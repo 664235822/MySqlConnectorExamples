@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "ConnectionPoolManager.h"
+#include "MySqlConnectionSubSystem.h"
 #include "GameFramework/GameModeBase.h"
 #include "MySqlConnectorGameMode.generated.h"
 
@@ -21,7 +21,7 @@ public:
 	TArray<FRowData> Results; //结果
 
 	UPROPERTY(BlueprintReadWrite)
-	UConnectionPoolManager* MysqlConnectManager; //mysql连接管理器
+	UMySqlConnectionSubSystem* MysqlConnectManager; //mysql连接管理器
 
 	virtual void BeginPlay() override;
 	UPROPERTY()

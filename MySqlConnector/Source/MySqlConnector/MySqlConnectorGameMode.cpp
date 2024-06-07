@@ -1,8 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "MySqlConnectorGameMode.h"
-
-#include "ConnectionPoolManager.h"
 #include "MySqlConnectorCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 
@@ -148,7 +146,7 @@ void AMySqlConnectorGameMode::InitMysqlConnectManager(bool CreateInstance)
 {
 	if (CreateInstance)
 	{
-		MysqlConnectManager = NewObject<UConnectionPoolManager>();
+		MysqlConnectManager = GetGameInstance()->GetSubsystem<UMySqlConnectionSubSystem>();
 		MysqlConnectManager->Init("127.0.0.1", 3306,
 								  "root", "123456",
 								  "dbname", 1024,
@@ -157,11 +155,11 @@ void AMySqlConnectorGameMode::InitMysqlConnectManager(bool CreateInstance)
 	}
 	if (MysqlConnectManager->Connect(Msg))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("连接成功"));
+		UE_LOG(LogTemp, Warning, TEXT("Connect Success"));
 	}
 	else
 	{
-		UE_LOG(LogTemp, Warning, TEXT("连接失败"));
+		UE_LOG(LogTemp, Warning, TEXT("Connect Failed"));
 	}
 }
 
