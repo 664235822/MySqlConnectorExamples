@@ -24,6 +24,8 @@ public:
 	UMySqlConnectionSubSystem* MysqlConnectManager; //mysql连接管理器
 
 	virtual void BeginPlay() override;
+
+	virtual void Destroyed() override;
 	UPROPERTY()
 	FString Msg;
 

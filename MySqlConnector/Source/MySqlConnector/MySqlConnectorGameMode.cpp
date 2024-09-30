@@ -13,6 +13,13 @@ void AMySqlConnectorGameMode::BeginPlay()
 	Super::BeginPlay();
 }
 
+void AMySqlConnectorGameMode::Destroyed()
+{
+	MysqlConnectManager->Close();
+	
+	Super::Destroyed();
+}
+
 //更新数据库
 void AMySqlConnectorGameMode::MySQL_UpdateArray_Server(const TArray<FString>& SqlArray)
 {
