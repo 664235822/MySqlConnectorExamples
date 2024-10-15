@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "MySqlConnector",
+			"Path": "..\\Source\\MySqlConnector.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "MySqlConnectorEditor",
+			"Path": "..\\Source\\MySqlConnectorEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
