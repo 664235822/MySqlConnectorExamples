@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"G:\\MySqlConnectorExamples\\MySqlConnector\\Source\\MySqlConnector\\MySqlConnector.Build.cs",
-		"G:\\MySqlConnectorExamples\\MySqlConnector\\Source\\MySqlConnector.Target.cs",
-		"G:\\MySqlConnectorExamples\\MySqlConnector\\Source\\MySqlConnectorEditor.Target.cs"
-	],
-	"EngineVersion": "5.4.4"
-}
